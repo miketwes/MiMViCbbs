@@ -31,3 +31,15 @@ Reference:
      pwd_strength.sql
      right-menu-2-column-liquid-layout-percentage
      simple_form
+
+.htaccess
+************
+
+     RewriteEngine on
+     RewriteCond $1 !^(index\.php|images|robots\.txt)
+     RewriteRule ^(.*)$ /index.php/$1 [L]
+     <Files *>
+     Options -Indexes
+     </Files>
+     ErrorDocument 403 http://    /
+     ErrorDocument 404 http://    /
