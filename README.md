@@ -1,4 +1,4 @@
-# MiMViCbbs
+# MiMViCbbs v3.0
 
 
 MiMViCbbs bases on the super-light weight and programmer friendly framework: MiMViC.
