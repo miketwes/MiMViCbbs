@@ -1,0 +1,52 @@
+<?php
+$pretitle = array(
+    '1' => '蹦蹦跳',
+    '2' => '演唱会第一排'
+    
+);
+
+
+?>
+<style>
+    #news{width:26%; float:left; margin-right:3px;padding:3px; margin-top:20px;text-align:left; }
+    #news1{width:70%; float:right;text-align:center;margin-left:3px;}
+
+    #news ,#news1 p{font-family : Verdana, Arial, Helvetica, sans-serif, '宋体';
+                    font-size : 13px;text-align:left; }
+    #news ul{ list-style:none; margin:0; padding:3px;}
+    #news ul li{height:25px;}
+    .s1{margin-left:10px; float:left;}
+    .s2{float:right; color:#999;}
+    .s3{float:left; color:#999;}
+    #news a{color:blue; text-decoration:none;}
+    #news a:hover{color:#296712;text-decoration:underline;}
+    .clear{clear:both;}
+    .widthimg{width: expression(this.width > 500 ? '500px': true); max-width: 500px; }
+</style>
+
+
+<div id=news>         
+    <ul>
+<?php
+for ($i = 1; $i < 3; $i++) {
+    echo '<li><span class="s1"><a href=/' . I_N . 'funnygif/' . $i . '>' . $pretitle[$i] . '</a></span></li>';
+}
+?>
+
+    </ul>    
+</div>
+
+
+<div id=news1>
+    <p>&nbsp;</p>   
+    <h2 align="center" style="font-weight:200;font-size:2em;"> 搞笑gif</h2><br />
+    <h2 align="center" style="font-weight:200;font-size:1.5em;">2015年10月26日更新</h2>
+    <p>&nbsp;</p>
+    <h5 style="font-weight:100;">
+<?php echo $pretitle["$id"] . '</h5>
+<p>&nbsp;</p>
+<p><p> </p><p></p>';
+echo '<div class="clear">
+<img class="widthimg" src="/pic/funnygif/' . $id . '.gif" atl="gif" /><p></p>
+</div></div>';
+?>

@@ -1,0 +1,100 @@
+<script src="/editor/e.js"></script>
+<h2 style="margin-top:30px;margin-bottom:30px;font-size:2em;font-weight:200;">Member post new topic            </h2>
+<form id="form"  action="/<?php echo I_N;?>save" method="post" onsubmit="DoProcess();">
+   <table class="ttable">
+      <tr>
+         <td></td>
+         <td>
+            <input name="topic" type="text" id="topic" class="c7" required="required" maxlength="100" pattern=".{4,100}"  />                        
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>
+            <textarea id="content" name="content"  rows="16" cols="75" style="display:none;"></textarea>
+            <script type="text/javascript">
+               //<![CDATA[
+               gFrame = 0;
+               gContentId = "content";
+               OutputEditorLoading();
+               //]]>
+                           
+            </script>
+            <script type="text/javascript">
+               //<![CDATA[
+               var i = '<iframe id="HtmlEditor" class="editor_frame" frameborder="0" marginheight="0" marginwidth="0" style="width:98%;height:200px;overflow:visible;hidefocus:true;" ></iframe>';
+               document.write(i);
+               //]]>
+            </script>
+         </td>
+         <td>
+            <table>
+               <tbody>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-44" type="radio"></td>
+                     <td><span class="micons" style="background-position:-44px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-66" type="radio"></td>
+                     <td><span class="micons" style="background-position:-66px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-88" type="radio"></td>
+                     <td><span class="micons" style="background-position:-88px 0;"></span><br></td>
+                  </tr>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-110" type="radio"></td>
+                     <td><span class="micons" style="background-position:-110px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-132" type="radio"></td>
+                     <td><span class="micons" style="background-position:-132px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-154" type="radio"></td>
+                     <td><span class="micons" style="background-position:-154px 0;"></span><br></td>
+                  </tr>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-176" type="radio"></td>
+                     <td><span class="micons" style="background-position:-176px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-198" type="radio"></td>
+                     <td><span class="micons" style="background-position:-198px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-220" type="radio"></td>
+                     <td><span class="micons" style="background-position:-220px 0;"></span><br></td>
+                  </tr>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-242" type="radio"></td>
+                     <td><span class="micons" style="background-position:-242px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-264" type="radio"></td>
+                     <td><span class="micons" style="background-position:-264px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-286" type="radio"></td>
+                     <td><span class="micons" style="background-position:-286px 0;"></span><br></td>
+                  </tr>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-308" type="radio"></td>
+                     <td><span class="micons" style="background-position:-308px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-330" type="radio"></td>
+                     <td><span class="micons" style="background-position:-330px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-352" type="radio"></td>
+                     <td><span class="micons" style="background-position:-352px 0;"></span><br></td>
+                  </tr>
+                  <tr>
+                     <td><input  class=radio name="iconid" value="-374" type="radio"></td>
+                     <td><span class="micons" style="background-position:-374px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-418" type="radio"></td>
+                     <td><span class="micons" style="background-position:-418px 0;"></span><br></td>
+                     <td><input  class=radio name="iconid" value="-440" type="radio"></td>
+                     <td><span class="micons" style="background-position:-440px 0;"></span><br></td>
+                  </tr>
+               </tbody>
+            </table>
+         </td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>
+            <img src="/inctxt/captcha.php"  alt="code" class="captcha"  />&nbsp;&nbsp;<input type="text" name="code" id="code" style="width:50px"  class="captcha" /><input style="border:none;" name="newpost" type="image" src="/pic/p1.png" class="captcha" alt="code" />&nbsp;&nbsp;
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </table>
+</form>
+<br /><br /><br />

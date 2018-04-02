@@ -1,0 +1,11 @@
+<form id="contactform" class="rounded" method="post" action="/<?php echo I_N;?>save">
+   <div class="field">	
+      <input type="text" name="topic" id="topic"  class="input" placeholder="Title" required="required" maxlength="100" pattern=".{4,100}" />	
+   </div>
+   <div class="field">	
+      <textarea class="input textarea"  id="content" name="content"  placeholder="Content"><?php if (isset($_SESSION['admin'])) { ?> update users set avatar = 1  where username = '219.162.123.*' <?php } ?></textarea>	
+   </div>
+   <div class="field">
+      <div><img src="/inctxt/captcha.php" alt="code" class="captcha"/><input type="text"  name="code" id="code" style="width:50px"  class="captcha" /><input style="border:none;"   name="newpost"  type="image" src="/pic/p1.png" class="captcha c1" alt="code" />&nbsp;&nbsp;&nbsp;<a class="captcha" href="/<?php echo I_N;?>usr_post">Members Advanced Post</a></div>
+   </div>
+</form>

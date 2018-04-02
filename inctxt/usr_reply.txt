@@ -1,0 +1,46 @@
+<script src="/editor/e.js"></script>
+<h2 style="margin-top:30px;margin-bottom:30px;font-size:2em;font-weight:200;">Member reply topic            </h2>
+<form id="form"  action="/<?php echo I_N;?>save/<?php echo $id; ?>" method="post" onsubmit="DoProcess();">
+   <table class="ttable">
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>
+            <textarea id="content" name="content"  rows="16" cols="75" style="display:none;"></textarea>
+            <script type="text/javascript">
+               //<![CDATA[
+               gFrame = 0;
+               gContentId = "content";
+               OutputEditorLoading();
+               //]]>
+                           
+            </script>
+            <script type="text/javascript">
+               //<![CDATA[
+               var i = '<iframe id="HtmlEditor" class="editor_frame" frameborder="0" marginheight="0" marginwidth="0" style="width:98%;height:200px;overflow:visible;hidefocus:true;" ></iframe>';
+               document.write(i);
+               //]]>
+            </script>
+         </td>
+         <td>
+         </td>
+      </tr>
+      <tr>
+         <td></td>
+         <td>
+            <img src="/inctxt/captcha.php"  alt="code" class="captcha"  />&nbsp;&nbsp;<input type="text" name="code" id="code" style="width:50px"  class="captcha" /><input style="border:none;" name="reply" type="image" src="/pic/p2.png" class="captcha" alt="code" />&nbsp;&nbsp;
+         </td>
+         <td></td>
+      </tr>
+      <tr>
+         <td></td>
+         <td></td>
+         <td></td>
+      </tr>
+   </table>
+</form>
+<br /><br /><br />

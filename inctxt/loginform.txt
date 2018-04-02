@@ -1,0 +1,14 @@
+ <h2 class="hk">Member login</h2>
+            <div align="center">
+                <form id="simple-form" style="width: 420px;" method="post" action="/<?php echo I_N;?>login">
+
+                    <div><label for="password1">Username</label>
+                        <input type="text" name="username" id="password1" /></div>
+
+                    <div><label for="password2">Password</label>
+                        <input type="password" name="password" id="password2" /></div>
+
+                    <input type="submit" name="Submit" id="Submit" value="Login">
+                </form>
+             </div>
+            <br /><br /><br />

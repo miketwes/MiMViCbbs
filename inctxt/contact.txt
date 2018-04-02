@@ -1,0 +1,2 @@
+<div id="m-content"><p><img src="/pic/mypic3.jpg" width="320" height="240" alt="mypic" /></p><p></p>
+Contact :<p>E-mail: 336699_99@163.com</p></div>
