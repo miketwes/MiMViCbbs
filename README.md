@@ -1,7 +1,13 @@
 # MiMViCbbs
 
 
-MiMViCbbs based on the super-light weight and programmer friendly framework: MiMViC.
+MiMViCbbs bases on the super-light weight and programmer friendly framework: MiMViC.
+    https://github.com/jrschumacher/mimvic
+
+Pdo use ThinPdo: 
+    https://github.com/fulldecent/thin-pdo
+   
+Css bases on  the BaiDu TieBa classic css.
 
 Reference:
 ------------
