@@ -43,3 +43,9 @@ Reference:
      </Files>
      ErrorDocument 403 http://    /
      ErrorDocument 404 http://    /
+
+
+Screenshot
+************
+![Screenshot](https://raw.githubusercontent.com/miketwes/MiMViCbbs/master/Mimvicbbs.png "Screenshot")
+
